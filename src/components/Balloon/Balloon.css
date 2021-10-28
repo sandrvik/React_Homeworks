@@ -1,0 +1,18 @@
+.balloon {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 5000px;
+    background-color: cadetblue;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.balloon-start {
+    margin-left: 0;
+}
+
+.balloon-end {
+    margin-left: 500px;
+}
