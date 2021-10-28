@@ -4,8 +4,8 @@ import Input from '../Input/Input';
 
 export default class Test extends React.Component {
 
-    shouldComponentUpdate() {
-        if (this.props.value >= this.props.trigger) {
+    shouldComponentUpdate(nextProps) {
+        if (nextProps.value > nextProps.trigger) {
             return false
         } else {
             return true
