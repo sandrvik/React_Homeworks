@@ -1,11 +1,11 @@
 import React from 'react';
-import './Title.css'
+import './Title.css';
 
 export default class Title extends React.Component {
 
     render() {
         return (
-            <div className="title">{this.props.text}</div>
+            <div className={this.props.className}>{this.props.text}</div>
         )
     }
 }

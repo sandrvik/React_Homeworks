@@ -4,7 +4,9 @@ export default class Input extends React.Component {
 
     render() {
         return (
-            <input {...this.props} />
+            <>
+                <span>{this.props.name}</span><input {...this.props} />
+            </>
         )
     }
 }
