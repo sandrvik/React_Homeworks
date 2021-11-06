@@ -1,0 +1,9 @@
+.modal {
+    border: 1px solid rgba(0, 0, 0, 0.344);
+    box-shadow: 10px 11px 8px 0px rgba(0, 0, 0, 0.446);
+    border-radius: 10px;
+    position: absolute;
+    left: 101%;
+    top: -1px;
+    transition: all 0.5s;
+}
