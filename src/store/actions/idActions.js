@@ -1,5 +1,5 @@
-import { INCREMENT_ID } from "../actionTypes"
+import { types } from "../actionTypes"
 
 export const incrementId = () => {
-    return { type: INCREMENT_ID }
+    return { type: types.INCREMENT_ID }
 }

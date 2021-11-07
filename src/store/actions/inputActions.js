@@ -1,8 +1,8 @@
-import { CHANGE_VALUE } from "../actionTypes"
+import { types } from "../actionTypes"
 
 export const changeInput = (value) => {
     return {
-        type: CHANGE_VALUE,
+        type: types.CHANGE_VALUE,
         payload: value
     }
 }

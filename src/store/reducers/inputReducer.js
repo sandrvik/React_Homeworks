@@ -1,4 +1,4 @@
-import { CHANGE_VALUE } from "../actionTypes";
+import { types } from "../actionTypes";
 
 const initialState = {
     value: ''
@@ -6,7 +6,7 @@ const initialState = {
 
 export default function inputReducer(state = initialState, action) {
     switch (action.type) {
-        case CHANGE_VALUE:
+        case types.CHANGE_VALUE:
             return {
                 ...state,
                 value: action.payload

@@ -1,4 +1,4 @@
-import { RESET_COLORS, SET_BACK_COLOR, SET_TEXT_COLOR } from "../actionTypes";
+import { types } from "../actionTypes";
 
 const initialState = {
     back: 'white',
@@ -7,17 +7,17 @@ const initialState = {
 
 export default function styleReducer(state = initialState, action) {
     switch (action.type) {
-        case SET_BACK_COLOR:
+        case types.SET_BACK_COLOR:
             return {
                 ...state,
                 back: action.payload
             };
-        case SET_TEXT_COLOR:
+        case types.SET_TEXT_COLOR:
             return {
                 ...state,
                 text: action.payload
             };
-        case RESET_COLORS:
+        case types.RESET_COLORS:
             return {
                 ...state,
                 text: 'black',
