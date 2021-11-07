@@ -1,0 +1,12 @@
+.colorOption {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.colorOption:hover {
+    transform: scale(110%);
+}

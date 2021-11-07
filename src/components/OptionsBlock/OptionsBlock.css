@@ -1,0 +1,9 @@
+.optionsBlock__header {
+    text-align: center;
+    margin: 5px;
+}
+
+.optionsBlock__options {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,20 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task__text {
+    width: 90%;
+    word-wrap: break-word;
+    margin: 10px;
+}
+
+.task__delete {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.task__delete:hover {
+    transform: rotate(180deg);
+}
