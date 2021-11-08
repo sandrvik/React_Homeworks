@@ -4,6 +4,9 @@ import "./Input.css";
 export const Input = (props) => {
 
     return (
-        <input {...props} />
+        <>
+            <h4 className="label">{props.label}</h4>
+            <input {...props} className="input" />
+        </>
     )
 }

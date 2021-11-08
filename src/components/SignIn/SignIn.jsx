@@ -17,21 +17,35 @@ export const SignIn = (props) => {
     }
 
     const checkEmptyFields = (fields) => {
-        return Object.values(fields).some(field => field === '')
+        return Object.values(fields).some(field => field === '');
     }
 
     const onSubmit = (e) => {
         e.preventDefault();
-        if (localStorage.getItem(fields.login) && JSON.parse(localStorage.getItem(fields.login)).password === fields.password) {
-            console.log('Got it!')
+        if (JSON.parse(localStorage.getItem(fields.login))?.password === fields.password) {
+            props.handleAuth(true);
+            props.history.push('/');
+        } else {
+            props.history.push('/signup');
         }
 
     }
 
     return (
-        <Form onSubmit={onSubmit}>
-            <Input name="login" type="text" value={fields.login} onChange={onChange} />
-            <Input name="password" type="password" value={fields.password} onChange={onChange} />
+        <Form onSubmit={onSubmit} title="Sign In">
+            <Input
+                name="login"
+                type="text"
+                value={fields.login}
+                onChange={onChange}
+                label="Login"
+            />
+            <Input
+                name="password"
+                type="password"
+                value={fields.password}
+                onChange={onChange}
+                label="Password" />
             <Button disabled={checkEmptyFields(fields)} title="Sign In" />
         </Form>
     )
