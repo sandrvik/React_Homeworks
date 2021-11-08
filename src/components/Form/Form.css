@@ -1,0 +1,18 @@
+.form {
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form > a {
+    align-self: flex-end;
+}
+
+.form__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
